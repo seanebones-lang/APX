@@ -33,6 +33,7 @@ enum CleaningModule: String, CaseIterable, Identifiable {
     case mailAttachments = "Mail Attachments"
     case trashBins = "Trash Bins"
     case browserData = "Browser Data"
+    case errorLogs = "Error Logs"
     case loginItems = "Login Items"
     case maintenance = "Maintenance"
     case privacy = "Privacy"
@@ -57,6 +58,7 @@ enum CleaningModule: String, CaseIterable, Identifiable {
         case .mailAttachments: return "envelope.fill"
         case .trashBins: return "trash.fill"
         case .browserData: return "safari.fill"
+        case .errorLogs: return "exclamationmark.triangle.fill"
         case .loginItems: return "rectangle.stack.badge.play.fill"
         case .maintenance: return "wrench.and.screwdriver.fill"
         case .privacy: return "hand.raised.fill"
@@ -81,6 +83,7 @@ enum CleaningModule: String, CaseIterable, Identifiable {
         case .mailAttachments: return .cyan
         case .trashBins: return .gray
         case .browserData: return .blue
+        case .errorLogs: return .red
         case .loginItems: return .indigo
         case .maintenance: return .green
         case .privacy: return .yellow

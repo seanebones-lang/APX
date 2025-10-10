@@ -149,6 +149,8 @@ struct DetailView: View {
                 TrashBinsView()
             case .browserData:
                 BrowserDataView()
+            case .errorLogs:
+                ErrorLogView()
             case .loginItems:
                 LoginItemsView()
             case .maintenance:
