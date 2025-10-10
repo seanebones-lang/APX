@@ -28,6 +28,8 @@
 	<string>Main</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.maccleaner.helper</key>
