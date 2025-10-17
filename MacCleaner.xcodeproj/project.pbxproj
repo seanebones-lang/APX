@@ -6,6 +6,540 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0A010001 /* MacCleanerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020001 /* MacCleanerApp.swift */; };
+		0A010002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020002 /* AppDelegate.swift */; };
+		0A010003 /* PrivilegeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020003 /* PrivilegeManager.swift */; };
+		0A010004 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020004 /* SoundManager.swift */; };
+		0A010005 /* LicenseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020005 /* LicenseManager.swift */; };
+		0A010006 /* CleaningEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020006 /* CleaningEngine.swift */; };
+		0A010007 /* FileSystemHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020007 /* FileSystemHelper.swift */; };
+		0A010008 /* MenuBarAgentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020008 /* MenuBarAgentManager.swift */; };
+		0A010009 /* ScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020009 /* ScanResult.swift */; };
+		0A01000A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02000A /* AppState.swift */; };
+		0A01000B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02000B /* Color+Extensions.swift */; };
+		0A01000C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02000C /* View+Extensions.swift */; };
+		0A01000D /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02000D /* PreferencesView.swift */; };
+		0A01000E /* LicenseActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02000E /* LicenseActivationView.swift */; };
+		0A01000F /* UninstallerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02000F /* UninstallerView.swift */; };
+		0A010010 /* UninstallerScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020010 /* UninstallerScanner.swift */; };
+		0A010011 /* TrashBinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020011 /* TrashBinsView.swift */; };
+		0A010012 /* TrashScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020012 /* TrashScanner.swift */; };
+		0A010013 /* ErrorLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020013 /* ErrorLogView.swift */; };
+		0A010014 /* ErrorLogScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020014 /* ErrorLogScanner.swift */; };
+		0A010015 /* LargeFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020015 /* LargeFilesView.swift */; };
+		0A010016 /* LargeFileScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020016 /* LargeFileScanner.swift */; };
+		0A010017 /* MailScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020017 /* MailScanner.swift */; };
+		0A010018 /* MailAttachmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020018 /* MailAttachmentsView.swift */; };
+		0A010019 /* LoginItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020019 /* LoginItemsView.swift */; };
+		0A01001A /* LoginItemsScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02001A /* LoginItemsScanner.swift */; };
+		0A01001B /* BrowserDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02001B /* BrowserDataView.swift */; };
+		0A01001C /* BrowserScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02001C /* BrowserScanner.swift */; };
+		0A01001D /* MemoryCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02001D /* MemoryCleanerView.swift */; };
+		0A01001E /* SmartScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02001E /* SmartScanView.swift */; };
+		0A01001F /* NetworkOptimizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02001F /* NetworkOptimizationView.swift */; };
+		0A010020 /* StartupOptimizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020020 /* StartupOptimizationView.swift */; };
+		0A010021 /* MalwareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020021 /* MalwareView.swift */; };
+		0A010022 /* MaintenanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020022 /* MaintenanceView.swift */; };
+		0A010023 /* AppUpdaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020023 /* AppUpdaterView.swift */; };
+		0A010024 /* PhotoScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020024 /* PhotoScanner.swift */; };
+		0A010025 /* PhotoCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020025 /* PhotoCleanerView.swift */; };
+		0A010026 /* SystemJunkScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020026 /* SystemJunkScanner.swift */; };
+		0A010027 /* SystemJunkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020027 /* SystemJunkView.swift */; };
+		0A010028 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020028 /* PrivacyView.swift */; };
+		0A010029 /* ShredderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020029 /* ShredderView.swift */; };
+		0A01002A /* SpaceLensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02002A /* SpaceLensView.swift */; };
+		0A01002B /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02002B /* ExtensionsView.swift */; };
+		0A01002C /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02002C /* MainWindowView.swift */; };
+		0A01002D /* AnimatedProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02002D /* AnimatedProgressRing.swift */; };
+		0A01002E /* ModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02002E /* ModuleView.swift */; };
+		0A01002F /* ParticleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02002F /* ParticleEffect.swift */; };
+		0A010030 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020030 /* HelperProtocol.swift */; };
+		0B010001 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B020001 /* main.swift */; };
+		0B010002 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A020030 /* HelperProtocol.swift */; };
+		0B010003 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B020003 /* HelperService.swift */; };
+		0C010001 /* MenuBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C020001 /* MenuBarApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A020001 /* MacCleanerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCleanerApp.swift; sourceTree = "<group>"; };
+		0A020002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A020003 /* PrivilegeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivilegeManager.swift; sourceTree = "<group>"; };
+		0A020004 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		0A020005 /* LicenseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseManager.swift; sourceTree = "<group>"; };
+		0A020006 /* CleaningEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleaningEngine.swift; sourceTree = "<group>"; };
+		0A020007 /* FileSystemHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemHelper.swift; sourceTree = "<group>"; };
+		0A020008 /* MenuBarAgentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarAgentManager.swift; sourceTree = "<group>"; };
+		0A020009 /* ScanResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResult.swift; sourceTree = "<group>"; };
+		0A02000A /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		0A02000B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		0A02000C /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		0A02000D /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		0A02000E /* LicenseActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseActivationView.swift; sourceTree = "<group>"; };
+		0A02000F /* UninstallerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerView.swift; sourceTree = "<group>"; };
+		0A020010 /* UninstallerScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerScanner.swift; sourceTree = "<group>"; };
+		0A020011 /* TrashBinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashBinsView.swift; sourceTree = "<group>"; };
+		0A020012 /* TrashScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashScanner.swift; sourceTree = "<group>"; };
+		0A020013 /* ErrorLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogView.swift; sourceTree = "<group>"; };
+		0A020014 /* ErrorLogScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogScanner.swift; sourceTree = "<group>"; };
+		0A020015 /* LargeFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFilesView.swift; sourceTree = "<group>"; };
+		0A020016 /* LargeFileScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFileScanner.swift; sourceTree = "<group>"; };
+		0A020017 /* MailScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailScanner.swift; sourceTree = "<group>"; };
+		0A020018 /* MailAttachmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAttachmentsView.swift; sourceTree = "<group>"; };
+		0A020019 /* LoginItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemsView.swift; sourceTree = "<group>"; };
+		0A02001A /* LoginItemsScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemsScanner.swift; sourceTree = "<group>"; };
+		0A02001B /* BrowserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserDataView.swift; sourceTree = "<group>"; };
+		0A02001C /* BrowserScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserScanner.swift; sourceTree = "<group>"; };
+		0A02001D /* MemoryCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryCleanerView.swift; sourceTree = "<group>"; };
+		0A02001E /* SmartScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartScanView.swift; sourceTree = "<group>"; };
+		0A02001F /* NetworkOptimizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOptimizationView.swift; sourceTree = "<group>"; };
+		0A020020 /* StartupOptimizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupOptimizationView.swift; sourceTree = "<group>"; };
+		0A020021 /* MalwareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MalwareView.swift; sourceTree = "<group>"; };
+		0A020022 /* MaintenanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceView.swift; sourceTree = "<group>"; };
+		0A020023 /* AppUpdaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdaterView.swift; sourceTree = "<group>"; };
+		0A020024 /* PhotoScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScanner.swift; sourceTree = "<group>"; };
+		0A020025 /* PhotoCleanerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCleanerView.swift; sourceTree = "<group>"; };
+		0A020026 /* SystemJunkScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemJunkScanner.swift; sourceTree = "<group>"; };
+		0A020027 /* SystemJunkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemJunkView.swift; sourceTree = "<group>"; };
+		0A020028 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		0A020029 /* ShredderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShredderView.swift; sourceTree = "<group>"; };
+		0A02002A /* SpaceLensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceLensView.swift; sourceTree = "<group>"; };
+		0A02002B /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
+		0A02002C /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		0A02002D /* AnimatedProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedProgressRing.swift; sourceTree = "<group>"; };
+		0A02002E /* ModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleView.swift; sourceTree = "<group>"; };
+		0A02002F /* ParticleEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleEffect.swift; sourceTree = "<group>"; };
+		0A020030 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		0A020031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A020032 /* MacCleaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacCleaner.entitlements; sourceTree = "<group>"; };
+		0A030001 /* MacCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B020001 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0B020003 /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		0B020004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B020005 /* MacCleanerHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacCleanerHelper.entitlements; sourceTree = "<group>"; };
+		0B030001 /* com.maccleaner.helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.maccleaner.helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C020001 /* MenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarApp.swift; sourceTree = "<group>"; };
+		0C020002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C030001 /* MenuBarAgent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuBarAgent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A040001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B040001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C040001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A050001 /* MacCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				0A050002 /* App */,
+				0A050003 /* Core */,
+				0A050004 /* Features */,
+				0A050005 /* Licensing */,
+				0A050006 /* UI */,
+				0A020031 /* Info.plist */,
+				0A020032 /* MacCleaner.entitlements */,
+			);
+			path = MacCleaner;
+			sourceTree = "<group>";
+		};
+		0A050002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A020001 /* MacCleanerApp.swift */,
+				0A020002 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0A050003 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0A050007 /* Services */,
+				0A050008 /* Models */,
+				0A050009 /* Helpers */,
+				0A05000A /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0A050004 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0A05000B /* SmartScan */,
+				0A05000C /* SystemJunk */,
+				0A05000D /* PhotoCleaner */,
+				0A05000E /* LargeFiles */,
+				0A05000F /* MailAttachments */,
+				0A050010 /* TrashBins */,
+				0A050011 /* BrowserData */,
+				0A050012 /* ErrorLogs */,
+				0A050013 /* Uninstaller */,
+				0A050014 /* LoginItems */,
+				0A050015 /* Maintenance */,
+				0A050016 /* Privacy */,
+				0A050017 /* Malware */,
+				0A050018 /* MemoryCleaner */,
+				0A050019 /* Updater */,
+				0A05001A /* Shredder */,
+				0A05001B /* Extensions */,
+				0A05001C /* SpaceLens */,
+				0A05001D /* Optimization */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0A050005 /* Licensing */ = {
+			isa = PBXGroup;
+			children = (
+				0A02000D /* PreferencesView.swift */,
+				0A02000E /* LicenseActivationView.swift */,
+			);
+			path = Licensing;
+			sourceTree = "<group>";
+		};
+		0A050006 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0A05001E /* Main */,
+				0A05001F /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0A050007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0A020003 /* PrivilegeManager.swift */,
+				0A020004 /* SoundManager.swift */,
+				0A020005 /* LicenseManager.swift */,
+				0A020006 /* CleaningEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0A050008 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A020009 /* ScanResult.swift */,
+				0A02000A /* AppState.swift */,
+				0A020030 /* HelperProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A050009 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A020007 /* FileSystemHelper.swift */,
+				0A020008 /* MenuBarAgentManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A05000A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A02000B /* Color+Extensions.swift */,
+				0A02000C /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A05000B /* SmartScan */ = {
+			isa = PBXGroup;
+			children = (
+				0A02001E /* SmartScanView.swift */,
+			);
+			path = SmartScan;
+			sourceTree = "<group>";
+		};
+		0A05000C /* SystemJunk */ = {
+			isa = PBXGroup;
+			children = (
+				0A020026 /* SystemJunkScanner.swift */,
+				0A020027 /* SystemJunkView.swift */,
+			);
+			path = SystemJunk;
+			sourceTree = "<group>";
+		};
+		0A05000D /* PhotoCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				0A020024 /* PhotoScanner.swift */,
+				0A020025 /* PhotoCleanerView.swift */,
+			);
+			path = PhotoCleaner;
+			sourceTree = "<group>";
+		};
+		0A05000E /* LargeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0A020016 /* LargeFileScanner.swift */,
+				0A020015 /* LargeFilesView.swift */,
+			);
+			path = LargeFiles;
+			sourceTree = "<group>";
+		};
+		0A05000F /* MailAttachments */ = {
+			isa = PBXGroup;
+			children = (
+				0A020017 /* MailScanner.swift */,
+				0A020018 /* MailAttachmentsView.swift */,
+			);
+			path = MailAttachments;
+			sourceTree = "<group>";
+		};
+		0A050010 /* TrashBins */ = {
+			isa = PBXGroup;
+			children = (
+				0A020012 /* TrashScanner.swift */,
+				0A020011 /* TrashBinsView.swift */,
+			);
+			path = TrashBins;
+			sourceTree = "<group>";
+		};
+		0A050011 /* BrowserData */ = {
+			isa = PBXGroup;
+			children = (
+				0A02001C /* BrowserScanner.swift */,
+				0A02001B /* BrowserDataView.swift */,
+			);
+			path = BrowserData;
+			sourceTree = "<group>";
+		};
+		0A050012 /* ErrorLogs */ = {
+			isa = PBXGroup;
+			children = (
+				0A020014 /* ErrorLogScanner.swift */,
+				0A020013 /* ErrorLogView.swift */,
+			);
+			path = ErrorLogs;
+			sourceTree = "<group>";
+		};
+		0A050013 /* Uninstaller */ = {
+			isa = PBXGroup;
+			children = (
+				0A020010 /* UninstallerScanner.swift */,
+				0A02000F /* UninstallerView.swift */,
+			);
+			path = Uninstaller;
+			sourceTree = "<group>";
+		};
+		0A050014 /* LoginItems */ = {
+			isa = PBXGroup;
+			children = (
+				0A02001A /* LoginItemsScanner.swift */,
+				0A020019 /* LoginItemsView.swift */,
+			);
+			path = LoginItems;
+			sourceTree = "<group>";
+		};
+		0A050015 /* Maintenance */ = {
+			isa = PBXGroup;
+			children = (
+				0A020022 /* MaintenanceView.swift */,
+			);
+			path = Maintenance;
+			sourceTree = "<group>";
+		};
+		0A050016 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				0A020028 /* PrivacyView.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		0A050017 /* Malware */ = {
+			isa = PBXGroup;
+			children = (
+				0A020021 /* MalwareView.swift */,
+			);
+			path = Malware;
+			sourceTree = "<group>";
+		};
+		0A050018 /* MemoryCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				0A02001D /* MemoryCleanerView.swift */,
+			);
+			path = MemoryCleaner;
+			sourceTree = "<group>";
+		};
+		0A050019 /* Updater */ = {
+			isa = PBXGroup;
+			children = (
+				0A020023 /* AppUpdaterView.swift */,
+			);
+			path = Updater;
+			sourceTree = "<group>";
+		};
+		0A05001A /* Shredder */ = {
+			isa = PBXGroup;
+			children = (
+				0A020029 /* ShredderView.swift */,
+			);
+			path = Shredder;
+			sourceTree = "<group>";
+		};
+		0A05001B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A02002B /* ExtensionsView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0A05001C /* SpaceLens */ = {
+			isa = PBXGroup;
+			children = (
+				0A02002A /* SpaceLensView.swift */,
+			);
+			path = SpaceLens;
+			sourceTree = "<group>";
+		};
+		0A05001D /* Optimization */ = {
+			isa = PBXGroup;
+			children = (
+				0A02001F /* NetworkOptimizationView.swift */,
+				0A020020 /* StartupOptimizationView.swift */,
+			);
+			path = Optimization;
+			sourceTree = "<group>";
+		};
+		0A05001E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0A02002C /* MainWindowView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0A05001F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0A02002D /* AnimatedProgressRing.swift */,
+				0A02002E /* ModuleView.swift */,
+				0A02002F /* ParticleEffect.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0B050001 /* MacCleanerHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0B020001 /* main.swift */,
+				0B020003 /* HelperService.swift */,
+				0B020004 /* Info.plist */,
+				0B020005 /* MacCleanerHelper.entitlements */,
+			);
+			path = MacCleanerHelper;
+			sourceTree = "<group>";
+		};
+		0C050001 /* MenuBarAgent */ = {
+			isa = PBXGroup;
+			children = (
+				0C020001 /* MenuBarApp.swift */,
+				0C020002 /* Info.plist */,
+			);
+			path = MenuBarAgent;
+			sourceTree = "<group>";
+		};
+		MainGroup = {
+			isa = PBXGroup;
+			children = (
+				0A050001 /* MacCleaner */,
+				0B050001 /* MacCleanerHelper */,
+				0C050001 /* MenuBarAgent */,
+				ProductsGroup,
+			);
+			sourceTree = "<group>";
+		};
+		ProductsGroup = {
+			isa = PBXGroup;
+			children = (
+				0A030001 /* MacCleaner.app */,
+				0B030001 /* com.maccleaner.helper */,
+				0C030001 /* MenuBarAgent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		MacCleanerTarget /* MacCleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = MacCleanerConfigList /* Build configuration list for PBXNativeTarget "MacCleaner" */;
+			buildPhases = (
+				0A060001 /* Sources */,
+				0A040001 /* Frameworks */,
+				0A070001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacCleaner;
+			productName = MacCleaner;
+			productReference = 0A030001 /* MacCleaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		MacCleanerHelperTarget /* MacCleanerHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = MacCleanerHelperConfigList /* Build configuration list for PBXNativeTarget "MacCleanerHelper" */;
+			buildPhases = (
+				0B060001 /* Sources */,
+				0B040001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacCleanerHelper;
+			productName = MacCleanerHelper;
+			productReference = 0B030001 /* com.maccleaner.helper */;
+			productType = "com.apple.product-type.tool";
+		};
+		MenuBarAgentTarget /* MenuBarAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = MenuBarAgentConfigList /* Build configuration list for PBXNativeTarget "MenuBarAgent" */;
+			buildPhases = (
+				0C060001 /* Sources */,
+				0C040001 /* Frameworks */,
+				0C070001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MenuBarAgent;
+			productName = MenuBarAgent;
+			productReference = 0C030001 /* MenuBarAgent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		MacCleanerProject /* MacCleaner */ = {
 			isa = PBXProject;
@@ -13,8 +547,20 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "MacCleaner";
+				TargetAttributes = {
+					MacCleanerTarget = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					MacCleanerHelperTarget = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					MenuBarAgentTarget = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
 			};
-			buildConfigurationList = MacCleanerBuildConfigurationList;
+			buildConfigurationList = MacCleanerBuildConfigurationList /* Build configuration list for PBXProject "MacCleaner" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -22,8 +568,8 @@
 				en,
 				Base,
 			);
-			mainGroup = MacCleanerMainGroup;
-			productRefGroup = MacCleanerProductsGroup;
+			mainGroup = MainGroup;
+			productRefGroup = ProductsGroup;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -34,7 +580,397 @@
 		};
 /* End PBXProject section */
 
-	};
-	rootObject = MacCleanerProject;
-}
+/* Begin PBXResourcesBuildPhase section */
+		0A070001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C070001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
+/* Begin PBXSourcesBuildPhase section */
+		0A060001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A010001 /* MacCleanerApp.swift in Sources */,
+				0A010002 /* AppDelegate.swift in Sources */,
+				0A010003 /* PrivilegeManager.swift in Sources */,
+				0A010004 /* SoundManager.swift in Sources */,
+				0A010005 /* LicenseManager.swift in Sources */,
+				0A010006 /* CleaningEngine.swift in Sources */,
+				0A010007 /* FileSystemHelper.swift in Sources */,
+				0A010008 /* MenuBarAgentManager.swift in Sources */,
+				0A010009 /* ScanResult.swift in Sources */,
+				0A01000A /* AppState.swift in Sources */,
+				0A01000B /* Color+Extensions.swift in Sources */,
+				0A01000C /* View+Extensions.swift in Sources */,
+				0A01000D /* PreferencesView.swift in Sources */,
+				0A01000E /* LicenseActivationView.swift in Sources */,
+				0A01000F /* UninstallerView.swift in Sources */,
+				0A010010 /* UninstallerScanner.swift in Sources */,
+				0A010011 /* TrashBinsView.swift in Sources */,
+				0A010012 /* TrashScanner.swift in Sources */,
+				0A010013 /* ErrorLogView.swift in Sources */,
+				0A010014 /* ErrorLogScanner.swift in Sources */,
+				0A010015 /* LargeFilesView.swift in Sources */,
+				0A010016 /* LargeFileScanner.swift in Sources */,
+				0A010017 /* MailScanner.swift in Sources */,
+				0A010018 /* MailAttachmentsView.swift in Sources */,
+				0A010019 /* LoginItemsView.swift in Sources */,
+				0A01001A /* LoginItemsScanner.swift in Sources */,
+				0A01001B /* BrowserDataView.swift in Sources */,
+				0A01001C /* BrowserScanner.swift in Sources */,
+				0A01001D /* MemoryCleanerView.swift in Sources */,
+				0A01001E /* SmartScanView.swift in Sources */,
+				0A01001F /* NetworkOptimizationView.swift in Sources */,
+				0A010020 /* StartupOptimizationView.swift in Sources */,
+				0A010021 /* MalwareView.swift in Sources */,
+				0A010022 /* MaintenanceView.swift in Sources */,
+				0A010023 /* AppUpdaterView.swift in Sources */,
+				0A010024 /* PhotoScanner.swift in Sources */,
+				0A010025 /* PhotoCleanerView.swift in Sources */,
+				0A010026 /* SystemJunkScanner.swift in Sources */,
+				0A010027 /* SystemJunkView.swift in Sources */,
+				0A010028 /* PrivacyView.swift in Sources */,
+				0A010029 /* ShredderView.swift in Sources */,
+				0A01002A /* SpaceLensView.swift in Sources */,
+				0A01002B /* ExtensionsView.swift in Sources */,
+				0A01002C /* MainWindowView.swift in Sources */,
+				0A01002D /* AnimatedProgressRing.swift in Sources */,
+				0A01002E /* ModuleView.swift in Sources */,
+				0A01002F /* ParticleEffect.swift in Sources */,
+				0A010030 /* HelperProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B060001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B010001 /* main.swift in Sources */,
+				0B010002 /* HelperProtocol.swift in Sources */,
+				0B010003 /* HelperService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C060001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C010001 /* MenuBarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DebugConfig /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ReleaseConfig /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		MacCleanerDebugConfig /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacCleaner/MacCleaner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MacCleaner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MacCleaner;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maccleaner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		MacCleanerReleaseConfig /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacCleaner/MacCleaner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MacCleaner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MacCleaner;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maccleaner.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		MacCleanerHelperDebugConfig /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MacCleanerHelper/MacCleanerHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MacCleanerHelper/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maccleaner.helper;
+				PRODUCT_NAME = com.maccleaner.helper;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		MacCleanerHelperReleaseConfig /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MacCleanerHelper/MacCleanerHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MacCleanerHelper/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maccleaner.helper;
+				PRODUCT_NAME = com.maccleaner.helper;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		MenuBarAgentDebugConfig /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MenuBarAgent/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maccleaner.menubar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		MenuBarAgentReleaseConfig /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MenuBarAgent/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maccleaner.menubar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		MacCleanerBuildConfigurationList /* Build configuration list for PBXProject "MacCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DebugConfig /* Debug */,
+				ReleaseConfig /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		MacCleanerConfigList /* Build configuration list for PBXNativeTarget "MacCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				MacCleanerDebugConfig /* Debug */,
+				MacCleanerReleaseConfig /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		MacCleanerHelperConfigList /* Build configuration list for PBXNativeTarget "MacCleanerHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				MacCleanerHelperDebugConfig /* Debug */,
+				MacCleanerHelperReleaseConfig /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		MenuBarAgentConfigList /* Build configuration list for PBXNativeTarget "MenuBarAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				MenuBarAgentDebugConfig /* Debug */,
+				MenuBarAgentReleaseConfig /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = MacCleanerProject /* MacCleaner */;
+}
