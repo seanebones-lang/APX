@@ -39,6 +39,28 @@
 	<string>MacCleaner needs to control other applications to manage them.</string>
 	<key>NSSystemAdministrationUsageDescription</key>
 	<string>MacCleaner needs administrator access to clean system files.</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>MacCleaner needs access to your Desktop to scan for large files and duplicates.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>MacCleaner needs access to your Documents to scan for large files and duplicates.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>MacCleaner needs access to your Downloads folder to clean temporary files.</string>
+	<key>NSRemovableVolumesUsageDescription</key>
+	<string>MacCleaner needs access to external drives to clean them.</string>
+	<key>NSNetworkVolumesUsageDescription</key>
+	<string>MacCleaner needs access to network drives to clean them.</string>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>MacCleaner needs access to cloud storage to scan for duplicates.</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>MacCleaner needs access to scan for duplicate media files.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>MacCleaner needs access to your Photos library to find duplicate photos.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>MacCleaner needs access to clean calendar cache files.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>MacCleaner needs access to clean reminders cache files.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>MacCleaner needs access to clean contacts cache files.</string>
 </dict>
 </plist>
 
